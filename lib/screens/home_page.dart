@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:proximity_sensor/proximity_sensor.dart';
+import 'package:sensormobileapplication/screens/compass.dart';
 import 'package:sensormobileapplication/screens/lightsensor.dart';
 import 'package:sensormobileapplication/screens/maps.dart';
+import 'package:sensormobileapplication/screens/proximitysensor.dart';
 import 'package:sensormobileapplication/screens/stepcounter.dart';
 import 'package:sensormobileapplication/util/smart_device_box.dart';
 
@@ -23,6 +26,8 @@ class _HomePageState extends State<HomePage> {
     ["Light Sensor", "lib/assets/light-bulb.png", true, LightSensorPage()],
     ["Step Counter", "lib/assets/footprint.png", false, StepCounterPage()],
     ["Map", "lib/assets/location.png", false, MapPage()],
+    ["Proximity", "lib/assets/smartphone.png", false, ProximityPage()],
+    ["compass", "lib/assets/explore.png", false, CompassPage()],
   ];
 
   // power button switched
